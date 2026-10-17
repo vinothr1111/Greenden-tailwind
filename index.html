@@ -11,18 +11,31 @@
 <body>
 
     <!--Responsive Navbar-->
-    <nav  class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
+    <nav  class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10 ">
         <h1 class="text-2xl">Greenden</h1>
 
-   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu preview-icon md:hidden"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg>
+   <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu preview-icon md:hidden"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg>
 
 
-            <ul class="flex gap-5 text-gray-600 hidden md:flex">
+            <ul class="hidden md:flex gap-5 text-gray-600">
                 <li><a class="hover:underline hover:text-black" href="index.html">Home</a></li>
                 <li><a class="hover:underline  hover:text-black" href="products.html">Product</a></li>
                 <li><a class="hover:underline  hover:text-black" href="contact.html">Contact</a></li>
             </ul>
     </nav>
+
+    <!-- side navbar -->
+
+    <section id="sidenav" class="bg-green-200 fixed z-20 top-0 transition-all duration-1000" style="width: 50%;height: 100vh;right: -50%;">
+        <div class="text-right p-5">
+            <p id="close-nav" class="inline cursor-pointer">X</p>
+        </div>
+            <ul class="items-center flex  gap-10 flex-col text-gray-600">
+                <li><a class="hover:underline hover:text-black" href="index.html">Home</a></li>
+                <li><a class="hover:underline  hover:text-black" href="products.html">Product</a></li>
+                <li><a class="hover:underline  hover:text-black" href="contact.html">Contact</a></li>
+            </ul>
+    </section>
 
 
     <!-- Header Section -->
@@ -133,5 +146,6 @@
     <p>The standard chunk of Lorem ipsum used since the 1500s is reproduced below for those interest</p>
     <p>&copy; 2021 Greenden.com</p>
   </section>
+  <script src="index.js"></script>
 </body>
 </html>
